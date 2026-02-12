@@ -1,0 +1,50 @@
+[tool.robocop.lint]
+configure = [
+    "line-too-long.line_length=1000",
+    "wrong-case-in-keyword-name.convention=first_word_capitalized",
+    "wrong-case-in-keyword-call.convention=first_word_capitalized",
+    "too-many-calls-in-keyword.max_calls=30",
+    "too-many-calls-in-test-case.max_calls=30",
+    "too-many-arguments.max_args=10",
+    "too-long-keyword.max_len=60",
+    "too-long-test-case.max_len=30",
+    "too-long-variable-name.max_len=70"
+]
+
+[tool.robocop.format]
+select = [
+    "AddMissingEnd",
+    "NormalizeSeparators",
+    "DiscardEmptySections",
+    "MergeAndOrderSections",
+    "RemoveEmptySettings",
+    "ReplaceEmptyValues",
+    "ReplaceWithVAR",
+    "NormalizeAssignments",
+    "OrderSettings",
+    "OrderSettingsSection",
+    "NormalizeTags",
+    "RenameVariables",
+    "IndentNestedKeywords",
+    "AlignSettingsSection",
+    "AlignVariablesSection",
+    "AlignTemplatedTestCases",
+    "NormalizeNewLines",
+    "NormalizeSectionHeaderName",
+    "NormalizeSettingName",
+    "ReplaceRunKeywordIf",
+    "SplitTooLongLine",
+    "RenameTestCases",
+    "RenameKeywords",
+    "ReplaceReturns",
+    "ReplaceBreakContinue",
+    "InlineIf",
+    "Translate",
+    "NormalizeComments"
+]
+configure = [
+    "NormalizeAssignments.equal_sign_type=space_and_equal_sign",
+    "NormalizeAssignments.equal_sign_type_variables=autodetect",
+    "AlignTemplatedTestCases.enabled=True",
+    "RenameKeywords.keyword_case=capitalize_first",
+]
